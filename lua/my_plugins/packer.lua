@@ -11,6 +11,7 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 	use { 'rose-pine/neovim', name = 'rose-pine' }
+    use "EdenEast/nightfox.nvim"
 
     use { 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'} }
 
@@ -19,6 +20,13 @@ return require('packer').startup(function(use)
     use { 'williamboman/mason-lspconfig.nvim' } 
     use { 'neovim/nvim-lspconfig' }
     use { 'hrsh7th/nvim-cmp' }
+    use { 'hrsh7th/cmp-buffer' }
+    use { 'hrsh7th/cmp-path' }
     use { 'hrsh7th/cmp-nvim-lsp' }
+    
+
+    -- Snippets
+    use { 'L3MON4D3/LuaSnip' }
+    use { 'rafamadriz/friendly-snippets' }
 
 end)

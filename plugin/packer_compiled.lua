@@ -74,10 +74,30 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  LuaSnip = {
+    loaded = true,
+    path = "C:\\Users\\thele\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
+    url = "https://github.com/L3MON4D3/LuaSnip"
+  },
+  ["cmp-buffer"] = {
+    loaded = true,
+    path = "C:\\Users\\thele\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-buffer",
+    url = "https://github.com/hrsh7th/cmp-buffer"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "C:\\Users\\thele\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "C:\\Users\\thele\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-path",
+    url = "https://github.com/hrsh7th/cmp-path"
+  },
+  ["friendly-snippets"] = {
+    loaded = true,
+    path = "C:\\Users\\thele\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
+    url = "https://github.com/rafamadriz/friendly-snippets"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -93,6 +113,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\thele\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neovim",
     url = "https://github.com/rose-pine/neovim"
+  },
+  ["nightfox.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\thele\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,

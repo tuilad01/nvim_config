@@ -54,6 +54,12 @@ cmp.setup({
   mapping = cmp.mapping.preset.insert({
     -- `Enter` key to confirm completion
     ['<CR>'] = cmp.mapping.confirm({select = false}),
+    ["<Tab>"] = cmp.mapping(function(fallback)
+        if cmp.visible() then
+            cmp.select_next_item()
+            cmp.confirm({select = true})
+        end
+    end, { "i" }),
 
     -- Ctrl+Space to trigger completion menu
     ['<C-Space>'] = cmp.mapping.complete(),

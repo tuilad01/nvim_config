@@ -1,6 +1,12 @@
-require'nvim-treesitter.configs'.setup {
+require('nvim-treesitter.configs').setup {
   -- A list of parser names, or "all" (the listed parsers MUST always be installed)
-  ensure_installed = { "javascript", "typescript", "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline", "java" },
+  ensure_installed = { "javascript", "typescript", "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline", "java", "html" },
+
+  -- Deprecated using setup nvim-ts-autotag setup instead.
+  --autotag = {
+  --  enable = true,
+  --  filetypes = { "html", "xml", "ts", "js", "jsx" },
+  --},
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
